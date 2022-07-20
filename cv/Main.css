@@ -1,0 +1,93 @@
+body, html {
+    height: 100%;
+    font-family: "Inconsolata", sans-serif;
+}
+
+.menu {
+    display: none;
+}
+
+* {
+    box-sizing: border-box
+}
+
+body {
+    font-family: "Lato", sans-serif;
+}
+
+/* Style the tab */
+.tab {
+    float: left;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    width: 30%;
+    height: 300px;
+}
+
+    /* Style the buttons inside the tab */
+    .tab button {
+        display: block;
+        background-color: inherit;
+        color: black;
+        padding: 22px 16px;
+        width: 100%;
+        border: none;
+        outline: none;
+        text-align: left;
+        cursor: pointer;
+        transition: 0.3s;
+        font-size: 24px;
+    }
+
+.bgimg {
+    background-position: center;
+    background-size: cover;
+    background-image: url("4.jpg");
+    height: 100%;
+    
+}
+
+.bgimg1 {
+    background-position: center;
+    background-size: cover;
+    background-image: url("Educatie.jpg");
+    height: 50%;
+}
+
+.improt {
+    height: 300px;
+    width: 250px;
+}
+
+.bgimg2 {
+    background-position: center;
+    background-size: cover;
+    background-image: url("Experienta.jpg");
+    min-height: 100%;
+    height: 100%;
+}
+.center {
+    text-align: center;
+}
+
+.center-page {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: -40px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.footer-pos {
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 600px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}

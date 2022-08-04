@@ -10,14 +10,22 @@
         <script src="Studii.js" defer></script>
     </head>
     <body>
-        <div class="w3-sidebar w3-gray" id="navbar">
-            <a href="Main.html" class="w3-button" style="float: left;font-size: 29px;">Turc Ioana Nicoleta</a>
-            <a href="Experienta.html" class="w3-button">Experienta</a>
-            <a href="Proiecte.html" class="w3-button">Proiecte</a> 
-            <a href="Studii.html" class="w3-button" >Studii</a>
-            <a href="Inregistrare.html" class="inregistrare w3-center" title="Login" itemprop="url"><span>&#10084;</span></a>
-            <a href="Contact.html" class="contact w3-center"  title="Login" itemprop="url"><span>&#9993;</span></a>
-        </div>
+        <div class="topnav w3-sidebar w3-gray" id="navbar"style="width:100% ; heidth:8%">
+            <a  class="active"></a> 
+            <!-- Navigation links (hidden by default) -->
+            <div id="myLinks" class="w3-center">
+                <a href="Experienta.html"  class="l w3-button">Experienta</a>
+                <a href="Proiecte.html"  class="l w3-button">Proiecte</a> 
+                <a href="Studii.html"  class="l w3-button" >Studii</a> 
+                <a href="Contact.html" id="r" title="Login" itemprop="url"><span>&#9993;</span></a>
+            
+            </div>   
+               
+            <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+           </div>
     </div>
     <div class="experienta w3-center">
     <br/><br/>

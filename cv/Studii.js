@@ -20,7 +20,7 @@ const Studii= [
     ]
     function generetaStudii(Studii){
         const stud =document.createElement("div");
-        const Scoala= document.createElement("p");
+        const Scoala= document.createElement("h4");
         const Specializarea= document.createElement("p");
         const endDate= document.createElement("p");
         Scoala.innerText=Studii.Scoala;
@@ -43,3 +43,12 @@ const Studii= [
     console.log(generetaStudii(Studii[1]));
     console.log(generetaStudii(Studii[2]));
     popstd(Studii);
+
+    function myFunction() {
+      var x = document.getElementById("myLinks");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }

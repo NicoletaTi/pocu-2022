@@ -1,9 +1,11 @@
 :root {
     --footer-blue: #3B6464;
     --footer-red: #1d0d0e;
-    --footer-black: black ;
-  }
-  body, html {
+    --footer-black: black;
+}
+
+body,
+html {
     height: 100%;
     font-family: "Inconsolata", sans-serif;
 }
@@ -11,150 +13,158 @@
 
 /*navbar*/
 @media (min-width: 700px) {
-#navbar{
-    height:8%;
-    width:100%;
-    opacity:60%;
-    font-size:25px;
-    float: right ;
-}
-.navbar #myLinks {
-    display: none;
-  }
-#navbar a{
-    display: block;
-}
-.navbar a.icon {
-    display: block;
-}
-.l{
-    float:left ;
-    font-size: 28px;
-}
-#r{
-    float:right ;
-    margin-right: 10px;
-    padding: 5px;
-}
-#Experienta2{
-    opacity: 80%;
-    background-color:#607b7b;
-    width: 300px;
-    height: 400px;
-    margin-left: 40%;
+    .topnav {
+        display: none;
+    }
 
+    #navbar {
+        height: 8%;
+        width: 100%;
+        opacity: 60%;
+        font-size: 25px;
+        float: right;
+    }
+
+    .l {
+        float: left;
+        font-size: 28px;
+    }
+
+    #r {
+        float: right;
+        margin-right: 10px;
+        padding: 5px;
+    }
+
+    #Experienta2 {
+        opacity: 80%;
+        background-color: #607b7b;
+        width: 300px;
+        height: 400px;
+        margin-left: 40%;
+
+    }
 }
-}
+
 /*incercare*/
 @media (max-width: 700px) {
-.topnav {
-    overflow: hidden;
-    background-color: #333;
-    opacity:60%;
-    position: relative;
-    height:8%;
-    width:100%;
-  }
-  
-  /* Hide the links inside the navigation menu (except for logo/home) */
-  .topnav #myLinks {
-    display: none;
-  }
-  
-  /* Style navigation menu links */
-  .topnav a {
-    color: white;
-    text-decoration: none;
-    display: block;
-    padding: 4.5% 4.5%;
-  }
-  
-  /* Style the hamburger menu */
-  .topnav a.icon {
-    background: black;
-    display: block;
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  
-  /* Add a grey background color on mouse-over */
-  .topnav a:hover {
-    background-color: #ddd;
-    color: black;
-  }
-  
-  /* Style the active link (or home/logo) */
-  .active {
-    background-color: black;
-    color: white;
-    height:8%;
-    opacity:60%;
-    width: 100%; }
- #Experienta2{
-        opacity: 80%;
-        background-color:#607b7b;
+    #navbar {
+        display: none;
+    }
+
+    .topnav {
+        overflow: hidden;
+        background-color: #333;
+        position: relative;
+    }
+
+    /* Hide the links inside the navigation menu (except for logo/home) */
+    .topnav #myLinks {
+        display: none;
+    }
+
+    /* Style navigation menu links */
+    .topnav a {
+        color: white;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+    }
+
+    /* Style the hamburger menu */
+    .topnav a.icon {
+        background: black;
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    /* Add a grey background color on mouse-over */
+    .topnav a:hover {
+        background-color: #ddd;
+        color: black;
+    }
+
+    /* Style the active link (or home/logo) */
+    .active {
+        background-color: #848f8b;
+        color: white;
+    }
+
+    #Experienta2 {
+
+        background-color: #607b7b;
         width: 300px;
         height: 400px;
         margin-left: 30%;
-    
+
     }
 
 }
+
 /*finish*/
 
-.size20px{
+.size20px {
     font-size: 20px;
 }
-.size16px{
+
+.size16px {
     font-size: 16px;
 }
-.bgimg {
-    background-position: center;
-    background-size: cover;
-    background-image: url("4.jpg");
-    height: 100%;
-    
-}
 
-.experienta{
+.experienta {
     background-position: center;
     background-color: #3B6464;
     height: 85%;
     align-items: center;
 }
+.Proiecte{
+        background-color: #3B6464;
+}
+.contact{
+    background-color: #607b7b;
+    height: 600px;
+    width: 400px;
+    margin-left: 38%;
+}
 
-
-#Studii{
+#Studii {
     display: flex;
 }
-#Studii> div{
+
+#Studii>div {
     opacity: 80%;
-    background-color:#607b7b;
+    background-color: #607b7b;
     width: 300px;
     height: 400px;
     margin-left: 10%;
+    padding: 10px;
 
 }
-.img{
-    height: 400 px; 
+#Studii>h4 {
+    color: #848f8b;
+
+}
+
+.img {
+    height: 400 px;
     width: 400px;
 }
 
 /*All footer*/
-footer{
-    padding: 30px;
+footer {
+    padding: 25px;
     background-color: var(--footer-blue);
 }
-.footerr{
-    padding: 30px;
-    background-color: var(--footer-red);
-}
-.footerb{
-    padding: 30px;
+
+
+.footerb {
+    padding: 25px;
     background-color: var(--footer-black);
 }
 
-.footerimage{
-    height: 30px;
+.footerimage {
+    height: 25px;
 }

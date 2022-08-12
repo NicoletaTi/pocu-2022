@@ -1,70 +1,80 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Contact</title>
-        <link rel="stylesheet" href="Main.css"/>
-        <meta charset="UTF-8"/>
-        <meta name="1" content="width=device-width, initial-scale=1"/>
-        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"/>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata"/>
-        <script src="Main.js" defer></script>
-    </head>
-    <body>
-        <div class="topnav w3-sidebar w3-gray" id="navbar"style="width:100% ; heidth:8%">
-            <a  class="active"></a> 
-            <!-- Navigation links (hidden by default) -->
-            <div id="myLinks" class="w3-center">
-                <a href="Experienta.html"  class="l w3-button">Experienta</a>
-                <a href="Proiecte.html"  class="l w3-button">Proiecte</a> 
-                <a href="Studii.html"  class="l w3-button" >Studii</a> 
-                <a href="Contact.html" id="r" title="Login" itemprop="url"><span>&#9993;</span></a>
-            
-            </div>   
-               
-            <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-              <i class="fa fa-bars"></i>
-            </a>
-           </div>
-        <div class="w3-center w3-black"> 
-          <br/>
-          <br/>
-          <hr/>  
-          <br/> 
-          <h1>Contact</h1>    
-          <form action="./ContNou.html" method="post">
-            <br/> <br/>
+
+<head>
+    <title>Contact</title>
+    <link rel="stylesheet" href="Main.css" />
+    <meta charset="UTF-8" />
+    <meta name="1" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata" />
+    <script src="Contact.js" defer></script>
+</head>
+
+<body>
+    <div class=" w3-gray w3-sidebar" id="navbar" style="width:100%;">
+        <a href="Main.html" class="l w3-button w3-pink">Turc Ioana Nicoleta</a>
+        <a href="Experienta.html" class="l w3-button">Experienta</a>
+        <a href="Proiecte.html" class="l w3-button">Proiecte</a>
+        <a href="Studii.html" class="l w3-button">Studii</a>
+        <a href="Contact.html" id="r" title="Login" itemprop="url"><span>&#9993;</span></a>
+    </div>
+    <div class="topnav" style="width:100%;">
+        <a class="active"></a>
+        <!-- Navigation links (hidden by default) -->
+        <div id="myLinks" class="w3-center">
+            <a href="Experienta.html" class="l w3-button">Experienta</a>
+            <a href="Proiecte.html" class="l w3-button">Proiecte</a>
+            <a href="Studii.html" class="l w3-button">Studii</a>
+            <a href="Contact.html" id="r" title="Login" itemprop="url"><span>&#9993;</span></a>
+        </div>
+        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+    <div class="w3-center Proiecte">
+        <br />
+        <br />
+        <hr />
+        <br />
+        <div class="contact w3-center">
+        <h1>Contact</h1>
+        <form action="./Main.html" method="post" id="Form">
+            <br /> <br />
             <label for="name">Nume</label>
             <!--required /minlenght sau max/ placeholder(adaugati nume) /disabled-->
             <input type="text" id="name" name="name" required minlength="2" placeholder="introduceti numele">
-            <br/> <br/>
+            <br /> <br />
             <label for="name">Prenume</label>
             <!--required /minlenght sau max/ placeholder(adaugati nume) /disabled-->
             <input type="text" id="Prenume" name="name" required minlength="2" placeholder="introduceti prenumele">
-            <br/> <br/>
-            <label for="E-mail">E-mail</label>
-            <!--required /minlenght sau max/ placeholder(adaugati nume) /disabled-->
-            <input type="text" id="E-mail" name="E-mail" required minlength="4" placeholder="introduceti E-mail">
-            <br/> <br/>
+            <br /> <br />
+            <label>Email : </label>
+            <input id="submitEmail" type="email" placeholder="Enter your Email" name="email" required="">
+            <br /> <br />
             <label for="phone">Numar de telefon</label>
             <!--required /minlenght sau max/ placeholder(adaugati nume) /disabled-->
             <input type="text" id="" name="phone" required minlength="10" placeholder="introduceti numarul de telefon">
-            <br/> <br/>
+            <br /> <br />
             <label for="Adresa">Adresa</label>
             <!--required /minlenght sau max/ placeholder(adaugati nume) /disabled-->
             <input type="text" id="Adresa" name="Adresa" required minlength="4" placeholder="introduceti Adresa">
-            <br/> <br/>
-            <label for="Intrebare">Ce aţi dori să ne comunicaţi?</label>
-            <br/> <br/>
-            <textarea cals="30" rows="4">
-
-            </textarea>
-            <br/> <br/><br/>
-            <button> <a href="Main.html" class="size20px">Trimite</a></button>
-            <br/>
-            <br/>
-            <br/>
-            <hr/>   
+            <br /> <br />
+            <label for="Intrebare">Ce aţi dori să ne comunicaţi?</label><br/><br/>
+            <textarea id="emailMessage" placeholder="Extend by dragging the bottom right corner"></textarea>
+            <div id="buttons">
+            <button type="submit" id="sendBtn">Send</button>
+            <button type="button" id="cancelBtn">Cancel</button>
+            </div>
+               
+            </form>
+        </div>
+            <br />
+            <br />
+            <br />
+            <hr />
             <footer class="w3-center">
                 <a href="https://www.facebook.com/nicoleta.turc.79/">
                     <img src="facebook.png" alt="Facebook" class="footerimage">
@@ -75,7 +85,7 @@
                 <a href="https://www.linkedin.com/in/nicoleta-turc-b4959b231/">
                     <img src="linkedin.png" alt="linkedin" class="footerimage">
                 </a>
-            
-          </footer>
-        </div>
-    </body>
+
+            </footer>
+    </div>
+</body>

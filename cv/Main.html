@@ -1,64 +1,122 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>My CV</title>
-        <link rel="stylesheet" href="Main.css"/>
-        <meta charset="UTF-8"/>
-        <meta name="1" content="width=device-width, initial-scale=1"/>
-        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"/>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata"/>
-        <script src="Main.js" defer></script>
-    </head>
-    <body>
-       <!--<div class="w3-sidebar w3-gray" id="navbar">
-            <a href="Experienta.html" class="w3-button">Experienta</a>
-            <a href="Proiecte.html" class="w3-button">Proiecte</a> 
-            <a href="Studii.html" class="w3-button" >Studii</a>
-            <a href="Inregistrare.html" class="inregistrare w3-center" title="Login" itemprop="url"><span>&#10084;</span></a>
-            <a href="Contact.html" class="contact w3-center"  title="Login" itemprop="url"><span>&#9993;</span></a>
-        </div>-->
-        <div class="topnav w3-sidebar w3-gray" id="navbar"style="width:100% ; heidth:8%">
-            <a  class="active"></a> 
-            <!-- Navigation links (hidden by default) -->
-            <div id="myLinks" class="w3-center">
-                <a href="Experienta.html"  class="l w3-button">Experienta</a>
-                <a href="Proiecte.html"  class="l w3-button">Proiecte</a> 
-                <a href="Studii.html"  class="l w3-button" >Studii</a> 
-                <a href="Contact.html" id="r" title="Login" itemprop="url"><span>&#9993;</span></a>
-            
-            </div>   
-               
-            <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-              <i class="fa fa-bars"></i>
-            </a>
-           </div>
-        
-                   
-          <!-- Header cu imagine -->
-         <!-- <header class="bgimg w3-display-container w3-grayscale-min" style="padding-top: 51%;" id="Home">
+
+<head>
+    <title>My CV</title>
+    <link rel="stylesheet" href="Main.css" />
+    <link rel="stylesheet" href="carusel.css" />
+    <meta charset="UTF-8" />
+    <meta name="1" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="Main.js" defer></script>
+</head>
+
+<body>
+    <div class=" w3-gray w3-sidebar" id="navbar" style="width:100%;">
+        <a href="Main.html" class="l w3-button w3-pink">Turc Ioana Nicoleta</a>
+        <a href="Experienta.html" class="l w3-button">Experienta</a>
+        <a href="Proiecte.html" class="l w3-button">Proiecte</a>
+        <a href="Studii.html" class="l w3-button">Studii</a>
+        <a href="Contact.html" id="r" title="Login" itemprop="url"><span>&#9993;</span></a>
+    </div>
+    <div class="topnav" style="width:100%;">
+        <a class="active"></a>
+        <!-- Navigation links (hidden by default) -->
+        <div id="myLinks" class="w3-center">
+            <a href="Experienta.html" class="l w3-button">Experienta</a>
+            <a href="Proiecte.html" class="l w3-button">Proiecte</a>
+            <a href="Studii.html" class="l w3-button">Studii</a>
+            <a href="Contact.html" id="r" title="Login" itemprop="url"><span>&#9993;</span></a>
+        </div>
+        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+
+
+    <!-- Header cu imagine -->
+    <!-- <header class="bgimg w3-display-container w3-grayscale-min" style="padding-top: 51%;" id="Home">
             <div class="w3-display-middle w3-center">  
             </div>  
           </header>-->
-          <header class="w3-grayscale-min">
-            <picture>
-                <source media="(min-width: 701px)" srcset="4.jpg">
-                <source media="(max-width: 700px)" srcset="11.jpg">
-                <img  src="4.jpg" style="width: 100% ;">
-              </picture>
-          </header>
-          <br/>
-          <footer class="footerr w3-center">
-                <a href="https://www.facebook.com/nicoleta.turc.79/">
-                    <img src="facebook.png" alt="Facebook" class="footerimage">
-                </a>
-                <a href="https://www.instagram.com/nicoleta_1767/">
-                    <img src="instagram.png.crdownload" alt="instagram" class="footerimage">
-                </a>
-                <a href="https://www.linkedin.com/in/nicoleta-turc-b4959b231/">
-                    <img src="linkedin.png" alt="linkedin" class="footerimage">
-                </a>
-            
-          </footer>
-    </body>
+    <!--<header class="w3-grayscale-min">
+        <picture>
+            <source media="(min-width: 701px)" srcset="4.jpg">
+            <source media="(max-width: 700px)" srcset="11.jpg">
+            <img src="4.jpg" style="width: 100% ;">
+        </picture>
+    </header>-->
+    <div>
+  <div class="carousel">
+    <ul class="slides">
+      <input type="radio" name="radio-buttons" id="img-1" checked />
+      <li class="slide-container">
+        <div class="slide-image">
+          <img src="4.jpg">
+        </div>
+        <div class="carousel-controls">
+          <label for="img-3" class="prev-slide">
+            <span>&lsaquo;</span>
+          </label>
+          <label for="img-2" class="next-slide">
+            <span>&rsaquo;</span>
+          </label>
+        </div>
+      </li>
+      <input type="radio" name="radio-buttons" id="img-2" />
+      <li class="slide-container">
+        <div class="slide-image">
+          <img src="p2.jpg">
+        </div>
+        <div class="carousel-controls">
+          <label for="img-1" class="prev-slide">
+            <span>&lsaquo;</span>
+          </label>
+          <label for="img-3" class="next-slide">
+            <span>&rsaquo;</span>
+          </label>
+        </div>
+      </li>
+      <input type="radio" name="radio-buttons" id="img-3" />
+      <li class="slide-container">
+        <div class="slide-image">
+          <img src="p4.jpg">
+        </div>
+        <div class="carousel-controls">
+          <label for="img-2" class="prev-slide">
+            <span>&lsaquo;</span>
+          </label>
+          <label for="img-1" class="next-slide">
+            <span>&rsaquo;</span>
+          </label>
+        </div>
+      </li>
+      <div class="carousel-dots">
+        <label for="img-1" class="carousel-dot" id="img-dot-1"></label>
+        <label for="img-2" class="carousel-dot" id="img-dot-2"></label>
+        <label for="img-3" class="carousel-dot" id="img-dot-3"></label>
+      </div>
+    </ul>
+  </div>
+</div>
+    <br />
+    <footer class="footer w3-center">
+        <a href="https://www.facebook.com/nicoleta.turc.79/">
+            <img src="facebook.png" alt="Facebook" class="footerimage">
+        </a>
+        <a href="https://www.instagram.com/nicoleta_1767/">
+            <img src="instagram.png.crdownload" alt="instagram" class="footerimage">
+        </a>
+        <a href="https://www.linkedin.com/in/nicoleta-turc-b4959b231/">
+            <img src="linkedin.png" alt="linkedin" class="footerimage">
+        </a>
+
+    </footer>
+</body>
+
 </html>

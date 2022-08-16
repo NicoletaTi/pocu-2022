@@ -1,0 +1,20 @@
+.root{
+    --c1:#a5babf;
+    --c2:#ebdbce;
+}
+.dd {
+    background-color:#a5babf;
+  }
+.dd>h1{
+    padding-top: 6%;
+    margin-left:45%
+}
+.dd>img{
+    margin-left: 5%;
+    border-radius: 30%;
+    height: 300px;
+}
+.dd>div{
+    margin-left: 5%;
+}
+ol.s {list-style-type: inherit;}
